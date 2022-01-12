@@ -3,13 +3,10 @@
 
 int main()
 {
-
     int a[3][3];
     int dimension;
-    int i, j, k;
+    int i, j;
     int det = 1;
-
-
 
     printf("Dimensionality Degree: ");
     scanf("%d", &dimension);
@@ -23,9 +20,7 @@ int main()
         }
     }
 
-
         printf("\n");
-
 
         printf("Matrix A: \n");
          for(i=0; i<dimension; i++){
@@ -35,7 +30,6 @@ int main()
             printf("\n");
         }
 
-
         if(dimension == 2) {
             det = a[0][0]*a[1][1] - a[0][1]*a[1][0];
         } else if(dimension == 3) {
@@ -44,10 +38,8 @@ int main()
             printf("break");
         }
 
-
         printf("\n");
         printf("Determinant: %d \n", det);
 
     return 0;
-
 }
